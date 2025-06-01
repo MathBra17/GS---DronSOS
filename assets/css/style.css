@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+body {
+    background: url('/assets/img/fundo.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==== Cabeçalho ==== */
+header {
+    width: 100%;
+    padding: 20px 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1d1d3a;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    z-index: 2;
+    object-fit: contain;
+    max-width: 70px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-item.active a {
+    color: var(--color-neutral-1);
+    border-bottom: 3px solid #fff;
+}
+
+#nav_list .nav-item a:hover {
+    color: var(--color-neutral-1);
+    border-bottom: 3px solid #fff;
+}
