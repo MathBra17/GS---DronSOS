@@ -76,3 +76,32 @@ nav {
     color: var(--color-neutral-1);
     border-bottom: 3px solid #fff;
 }
+
+/* ==== Seção: Problema ==== */
+.conteudo-problema {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.conteudo-problema .bloco-problema {
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 500px;
+    flex: 1;
+    text-align: center;
+}
+
+.conteudo-problema .bloco-problema p {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.conteudo-problema .bloco-problema img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
