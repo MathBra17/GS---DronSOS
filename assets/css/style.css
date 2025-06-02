@@ -77,6 +77,68 @@ nav {
     border-bottom: 3px solid #fff;
 }
 
+/* ==== Seções ==== */
+main {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+#problema,
+#tecnologia,
+#objetivo,
+#publico-alvo,
+#beneficios,
+#dia-a-dia {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin-top: 80px;
+    box-sizing: border-box;
+}
+
+#problema h1,
+#tecnologia h1,
+#objetivo h1,
+#publico-alvo h1,
+#beneficios h1,
+#dia-a-dia h1 {
+    font-family: 'Poppins';
+    font-size: 3rem;
+    color: #b30000;
+    margin-bottom: 20px;
+}
+
+#problema p,
+#tecnologia p,
+#objetivo p,
+#publico-alvo p,
+#beneficios p,
+#dia-a-dia p {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+#problema img,
+#tecnologia img,
+#objetivo img,
+#publico-alvo img,
+#beneficios img,
+#dia-a-dia img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
 /* ==== Seção: Problema ==== */
 .conteudo-problema {
     display: flex;
