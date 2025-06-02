@@ -192,3 +192,54 @@ nav {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+/* ==== Seção: Relatos ==== */
+#form-section {
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+.form-title {
+    font-size: 3rem;
+    color: red;
+    margin-bottom: 20px;
+}
+
+#relato-form {
+    max-width: 500px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#relato-form label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#relato-form input,
+#relato-form textarea {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#relato-form button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#relato-form button:hover {
+    background-color: darkred;
+}
