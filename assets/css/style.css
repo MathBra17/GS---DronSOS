@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -22,6 +23,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 
@@ -221,7 +223,6 @@ main {
     justify-content: space-between;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .circle{
@@ -240,7 +241,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
 .container .text{
     position: relative;
     max-width: 600px;
@@ -257,9 +261,10 @@ main {
 
 /* --- slide show ---*/
 .slider {
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -280,7 +285,8 @@ main {
 }
 
 .slide img{
-    width: 800px;
+    width: 100%;
+    height: auto;
 }
 
 .manual-navigation{
@@ -323,7 +329,7 @@ main {
     margin-left: -75%;
 }
 
-.navgation-auto div{
+.navigation-auto div{
     border: 2px solid #20a6ff;
     padding: 5px;
     border-radius: 10px;
@@ -331,7 +337,7 @@ main {
     transition: 1s;
 }
 
-.navgation-auto{
+.navigation-auto{
     position: absolute;
     width: 800px;
     margin-top: 360px;
@@ -339,27 +345,25 @@ main {
     justify-content: center;
 }
 
-.navgation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child){
     margin-right: 40px;
 }
 
-#radio1:checked ~ .navgation-auto .auto_btn1{
+#radio1:checked ~ .navigation-auto .auto-btn1{
     background-color: #fff;
 }
 
-#radio2:checked ~ .navgation-auto .auto_btn2{
+#radio2:checked ~ .navigation-auto .auto-btn2{
     background-color: #fff;
 }
 
-#radio3:checked ~ .navgation-auto .auto_btn3{
+#radio3:checked ~ .navigation-auto .auto-btn3{
     background-color: #fff;
 }
 
-#radio4:checked ~ .navgation-auto .auto_btn4{
+#radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #fff;
 }
-
-
 
 /* ==== Seção: Problema ==== */
 .conteudo-problema {
