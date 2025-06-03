@@ -12,8 +12,8 @@ class MobileNavbar {
     animateLinks() {
         this.navLinks.forEach((link, index) => {
             link.style.animation
-            ? (link.style.animation = '')
-            : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
+                ? (link.style.animation = '')
+                : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
         });
     }
 
@@ -42,18 +42,18 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
-// ----- slide show -----//
+// ==== Home: SlideShow ==== //
 let count = 1;
 document.getElementById("radio1").checked = true;
 
-setInterval(function(){
+setInterval(function () {
     nextImage();
 }, 2000)
 
 
-function nextImage(){
+function nextImage() {
     count++;
-    if(count>4){
+    if (count > 4) {
         count = 1;
     }
 
