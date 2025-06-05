@@ -17,7 +17,7 @@ a:hover {
 }
 
 body {
-    background: url('/assets/img/fundo.jpg') no-repeat center center;
+    background: url('../img/fundo.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
